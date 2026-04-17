@@ -1,0 +1,45 @@
+{
+  "model_name": "pod_pinn",
+  "problem": {
+    "nu": 0.01,
+    "x_min": 0.0,
+    "x_max": 1.0,
+    "t_min": 0.0,
+    "t_max": 1.0,
+    "mode_numbers": [
+      1,
+      2,
+      4
+    ],
+    "mode_amplitudes": [
+      1.0,
+      0.7,
+      -0.5
+    ]
+  },
+  "training": {
+    "n_x": 256,
+    "n_snapshots": 160,
+    "n_collocation": 160,
+    "hidden_width": 64,
+    "hidden_depth": 3,
+    "epochs": 2500,
+    "lr": 0.001,
+    "energy_threshold": 1.0,
+    "max_modes": 6,
+    "seed": 42,
+    "log_every": 250,
+    "device": "cpu"
+  },
+  "selected_rank": 3,
+  "parameter_count": 8643,
+  "training_seconds": 14.57495379447937,
+  "metrics": {
+    "relative_l2_error": 0.00014032139380918302,
+    "final_time_relative_error": 4.866606013381064e-05,
+    "max_abs_error": 0.0003380761897551765,
+    "n_x": 256,
+    "n_t_eval": 160
+  },
+  "output_dir": "D:\\codex-project\\DMD learning\\POD-PINN\\outputs"
+}

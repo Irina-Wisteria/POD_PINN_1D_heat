@@ -1,0 +1,44 @@
+{
+  "model_name": "plain_pinn",
+  "problem": {
+    "nu": 0.01,
+    "x_min": 0.0,
+    "x_max": 1.0,
+    "t_min": 0.0,
+    "t_max": 1.0,
+    "mode_numbers": [
+      1,
+      2,
+      4
+    ],
+    "mode_amplitudes": [
+      1.0,
+      0.7,
+      -0.5
+    ]
+  },
+  "training": {
+    "n_x_eval": 256,
+    "n_t_eval": 160,
+    "n_collocation": 768,
+    "n_boundary": 256,
+    "n_initial": 256,
+    "hidden_width": 64,
+    "hidden_depth": 4,
+    "epochs": 1200,
+    "lr": 0.001,
+    "seed": 42,
+    "log_every": 250,
+    "device": "cpu"
+  },
+  "parameter_count": 12737,
+  "training_seconds": 20.06615900993347,
+  "metrics": {
+    "relative_l2_error": 0.0059295664805757145,
+    "final_time_relative_error": 0.005649241178535209,
+    "max_abs_error": 0.028126912118313918,
+    "n_x": 256,
+    "n_t_eval": 160
+  },
+  "output_dir": "D:\\codex-project\\DMD learning\\POD-PINN\\outputs_plain_pinn"
+}
